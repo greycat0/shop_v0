@@ -18,7 +18,7 @@
             </br>
         </img>
     </a>
-    <button style="margin-left: 20px; width: 80px; height: 40px; align-self: center; border-radius: 10px;">
+    <button onclick="location='/admin'" style="margin-left: 20px; width: 80px; height: 40px; align-self: center; border-radius: 10px;">
         Войти
     </button>
 </div>
