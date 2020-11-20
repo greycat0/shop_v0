@@ -48,7 +48,7 @@
 </style>
 <div class="header">
 	    
-	    	<a class="logo" href="http://<?php echo $_SERVER['SERVER_NAME'];?>/shop">
+	    	<a class="logo" href="/">
 	     	<img src="imgs/logo.jpg">
 	        <span>
 	            Michel<br>David<br>Shop
