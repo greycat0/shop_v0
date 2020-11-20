@@ -11,7 +11,7 @@
         </input>
     </div>
     <a style=" display:inline-block; text-align: center; align-self: center;
-    margin-left: auto; color:black; text-decoration: none;" href="http://<?php echo $_SERVER['SERVER_NAME'];?>/shop/basket.php">
+    margin-left: auto; color:black; text-decoration: none;" href="/basket.php">
         <img height="20" src="imgs/basket.png">
             <br>
                 Корзина
