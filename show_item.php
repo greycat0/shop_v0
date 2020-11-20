@@ -42,7 +42,7 @@ include("templates/connect_to_db.php");
 				<?php
 				include("templates/search.php");
 				echo "<input type='hidden'name='id' value='$_GET[id]'>";
-					$res = mysqli_query($db, "SELECT * FROM `id6435364_system`.`product_catalog` where id=$_GET[id]");
+					$res = mysqli_query($db, "SELECT * FROM `product_catalog` where id=$_GET[id]");
 					if ( $res->num_rows == 1  )
 					{
 						$row = mysqli_fetch_assoc($res);

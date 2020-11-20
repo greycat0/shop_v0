@@ -61,7 +61,7 @@ if ( $_POST['pass'] != "canicomein" )
 					}
 					$desc = $_POST['desc'];
 					 //
-					mysqli_query($db, "INSERT INTO `id6435364_system`.`product_catalog`(`id`, `name`, `img`, `price`, `amoung`, `desc`) VALUES('NULL', '$name', '$img', '$price', '$amoung', '$desc')");
+					mysqli_query($db, "INSERT INTO `product_catalog`(`id`, `name`, `img`, `price`, `amoung`, `desc`) VALUES('NULL', '$name', '$img', '$price', '$amoung', '$desc')");
 					echo "<form id='target' action='admin.php' method='POST'>";
 					echo "<input type='hidden' name='pass' value='canicomein'>";
 					echo "<form>";

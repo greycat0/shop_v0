@@ -40,7 +40,7 @@ include("templates/connect_to_db.php");
                     $i = 0;
                     foreach ($basket as $key => $value)
                     {
-                        $query = "SELECT * FROM `id6435364_system`.`product_catalog` WHERE id=";
+                        $query = "SELECT * FROM `product_catalog` WHERE id=";
                         $query .= substr($key, 2);
                         $res = mysqli_query($db, $query);
                         $arr = mysqli_fetch_assoc($res);

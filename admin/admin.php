@@ -8,7 +8,7 @@ if ( $_POST['pass'] != "canicomein" )
 
 if ( $_POST['action'] == "Удалить" )
 {
-	mysqli_query($db, "DELETE FROM `id6435364_system`.`product_catalog` WHERE `id`='$_POST[id]'");
+	mysqli_query($db, "DELETE FROM `product_catalog` WHERE `id`='$_POST[id]'");
 }
 ?>
 
@@ -20,7 +20,7 @@ if ( $_POST['action'] == "Удалить" )
 	<body style="background:#E2E2F5FF; margin: 0px;">
 		<div style="background:#FAFAFAFF; border: 1px solid; margin: 10px 100px 10px 100px; padding: 10px 20px 10px 20px;">
 			<?php
-				$res = mysqli_query($db, "SELECT * FROM `id6435364_system`.`product_catalog`");
+				$res = mysqli_query($db, "SELECT * FROM `product_catalog`");
 				while ( $row = mysqli_fetch_assoc($res) )
 				{
 					foreach ($row as $key => $value) 

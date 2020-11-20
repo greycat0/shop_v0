@@ -23,7 +23,7 @@ if ( isset($_POST['name']) )
 			{
 				$img = $_FILES['img']['name'];
 				move_uploaded_file($_FILES['img']['tmp_name'], "../imgs/$img");
-				mysqli_query($db, "UPDATE `id6435364_system`.`product_catalog` SET `img`='$img' WHERE `id`='$_POST[id]'");
+				mysqli_query($db, "UPDATE `product_catalog` SET `img`='$img' WHERE `id`='$_POST[id]'");
 			}
 			else
 			{
@@ -54,7 +54,7 @@ if ( isset($_POST['name']) )
 			$amoung = $_POST['amoung'];
 		}
 		$desc = $_POST['desc'];
-		mysqli_query($db, "UPDATE `id6435364_system`.`product_catalog` SET `name`='$name',`price`='$price', `amoung`='$amoung', `desc`='$desc' WHERE `id`='$_POST[id]'");
+		mysqli_query($db, "UPDATE `product_catalog` SET `name`='$name',`price`='$price', `amoung`='$amoung', `desc`='$desc' WHERE `id`='$_POST[id]'");
 		//<meta http-equiv='refresh' content='0; url=admin.php?pass=canicomein'>
 		echo "<form id='target' action='admin.php' method='POST'>";
 		echo "<input type='hidden' name='pass' value='canicomein'>";
@@ -72,7 +72,7 @@ if ( isset($_POST['name']) )
 				<input type="hidden" name="pass" value="canicomein">
 				<?php
 				echo "<input type='hidden'name='id' value='$_POST[id]'>";
-					$res = mysqli_query($db, "SELECT * FROM `id6435364_system`.`product_catalog` where id=$_POST[id]");
+					$res = mysqli_query($db, "SELECT * FROM `product_catalog` where id=$_POST[id]");
 					if ( $res->num_rows == 1  )
 					{
 						$row = mysqli_fetch_assoc($res);
